@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/*app.js*/
+/*
+region.wavesurfer-region:before {
+    content: attr(data-region-label);
+}
+
+region.wavesurfer-region[data-region-highlight] {
+  border: 1px solid rgb(86, 180, 239);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}*/
+
+/*style.css*/
+
+.navbar-header {
+    float: none;
+    text-align: center;
+}
+
+
+#waveform{
+	background-color: #D3D3D3;
+}
+
+.box11{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+.box11 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.square_btn_save {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #0097a7;
+    border: solid 2px #0097a7;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.square_btn_save:hover {
+    background: #0097a7;
+    color: white;
+}
+
+
+.square_btn_delete {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #e64a19;
+    border: solid 2px #e64a19;
+    border-radius: 3px;
+    transition: .4s;
+}
+
+.square_btn_delete:hover {
+    background: #e64a19;
+    color: white;
+}
+
+
+.btn_export{
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.btn_export:hover{
+    background: #668ad8;
+}
