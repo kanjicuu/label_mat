@@ -1,52 +1,73 @@
 <div class="row">
-  <h3>操作方法</h3>
-  <p><strong>クリックしながらスライドさせ範囲を選択します。</strong></p>
+  <div class="col s12 m9 l10">
+    <div id="introduction" class="section scrollspy">
 
-  <p style="text-align:center;"><img src="/explain/1.png" width="500"></p>
+    <h3>操作方法</h3>
+    <p><strong>クリックしながらスライドさせ範囲を選択します。</strong></p>
 
-  <p><strong>できた範囲をクリックすると下に編集画面が出てきます。</strong></p>
+    <p style="text-align:center;"><img src="/explain/1.png" width="500"></p>
 
-  <p style="text-align:center;"><img src="/explain/2.png" width="500"></p>
+    <p><strong>できた範囲をクリックすると下に編集画面が出てきます。</strong></p>
 
-
-  <p>
-    <ul>
-      <li>開始時間、終了時間</li>
-      </li>
-    </ul> 
-    範囲をドラッグし動かし調整、また、端にマウスを合わせると伸縮可能です。（値を入力して編集することもできます。）
-  </p>
-
-  <p style="text-align:center;"><img src="/explain/3.png" width="500"></p>
-  <p style="text-align:center;"><img src="/explain/4.png" width="500"></p>
+    <p style="text-align:center;"><img src="/explain/2.png" width="500"></p>
 
 
+    <p>
+      <ul>
+        <li>開始時間、終了時間</li>
+        </li>
+      </ul> 
+      範囲をドラッグし動かし調整、また、端にマウスを合わせると伸縮可能です。（値を入力して編集することもできます。）
+    </p>
 
-  <p>
-    <ul>
-      <li>ラベルとコメント</li>
-      </li>
-    </ul> 
-  </p>
-  <p>ラベルは評価する際の一般的な項目を表します。コメントは、それに対するより詳しい講評を表します。（どれにも該当しない場合は、「その他」を選択し、コメントに入力してください。ラベルの種類に関しては調査を重ねている段階です。コメント欄で）</p>
-
-　<p><strong>編集ができたら、保存ボタンを押します。範囲を削除したい場合は、削除ボタンを押します。</strong></p>
-
-  <hr>
-
-  <h3>その後の操作</h3>
-    <p><strong>アドバイスが終了したら、「書き出しボタン」を押してください。</strong></p>
-    
-    <p style="text-align:center;"><img src="/explain/5.png" width="500"></p>
-    <p>データがダウンロードされます。</p>
-
-    <p><strong>その後に「メールボタン」を押し、ダウンロードしたデータを添付して送信してください。</strong></p>
-
-    <hr> 
+    <p style="text-align:center;"><img src="/explain/3.png" width="500"></p>
+    <p style="text-align:center;"><img src="/explain/4.png" width="500"></p>
 
 
 
-    <br>
-    <br>
+    <p>
+      <ul>
+        <li>ラベルとコメント</li>
+        </li>
+      </ul> 
+    </p>
+    <p>ラベルは評価する際の一般的な項目を表します。コメントは、それに対するより詳しい講評を表します。（どれにも該当しない場合は、「その他」を選択し、コメントに入力してください。ラベルの種類に関しては調査を重ねている段階です。コメント欄で）</p>
 
+  　<p><strong>編集ができたら、保存ボタンを押します。範囲を削除したい場合は、削除ボタンを押します。</strong></p>
+    </div>
+
+    <div id="structure" class="section scrollspy">
+    <h3>その後の操作</h3>
+      <p><strong>アドバイスが終了したら、「書き出しボタン」を押してください。</strong></p>
+      
+      <p style="text-align:center;"><img src="/explain/5.png" width="500"></p>
+      <p>データがダウンロードされます。</p>
+
+      <p><strong>その後に「メールボタン」を押し、ダウンロードしたデータを添付して送信してください。</strong></p>
+
+      <hr> 
+
+    </div>
+      <br>
+      <br>
+  </div>
+  <div class="col hide-on-small-only m3 l2">
+    <ul class="section table-of-contents">
+      <li><a href="#introduction">操作方法</a></li>
+      <li><a href="#structure">その後の操作</a></li>
+    </ul>
+  </div>
 </div>
+
+<script>
+  
+  var elem = document.querySelector('.scrollspy');
+  var instance = M.ScrollSpy.init(elem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+        
+</script>

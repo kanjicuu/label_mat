@@ -1,8 +1,10 @@
 <div class="row">
     <div id="demo">
-        <p id="subtitle" class="text-center text-info">&nbsp;</p>
+        <div class="col s12">
+            <p id="subtitle" style="text-align:center;">&nbsp;</p>
+        </div>
 
-        <div class="col-xs-12">
+        <div class="col s12">
             <div id="waveform">
                 <!-- Here be waveform -->
             </div>
@@ -12,49 +14,46 @@
 
         <!-- Zoom -->
         <p class="row">
-            <div class="col-xs-1">
-              <i class="glyphicon glyphicon-zoom-in"></i>
+            <div class="col s1">
+              <i class="material-icons">zoom_in</i>
             </div>
 
-            <div class="col-xs-10">
+            <div class="col s10">
               <input id="slider" type="range" min="1" max="200" value="25" style="width: 100%" />
             </div>
 
-            <div class="col-xs-1">
-              <i class="glyphicon glyphicon-zoom-out"></i>
+            <div class="col s1">
+              <i class="material-icons">zoom_out</i>
             </div>
         </p>
 
         <div class="row" style="margin: 30px 0">
-            <div class="col-sm-6">
-                <h4>下の説明をお読みください。</h4>
+            <div class="col s5">
+                <h5>下の説明をお読みください。</h5>
             </div>
 
-            <div class="col-sm-2">
-                <button class="btn btn-primary btn-block" data-action="play">
+            <div class="col s2">
+                <a class="waves-effect waves-light btn-large deep-orange" data-action="play">
                     <span id="play">
-                        <i class="glyphicon glyphicon-play"></i>
-                        再生
+                        <i class="large material-icons">play_arrow</i>
                     </span>
 
                     <span id="pause" style="display: none">
-                        <i class="glyphicon glyphicon-pause"></i>
-                        一時停止
+                        <i class="medium material-icons">pause</i>
                     </span>
-                </button>
+                </a>
             </div>
 
-            <div class="col-sm-2">
-                <button class="btn btn-info btn-block" data-action="export" title="Export annotations to JSON" id = 'export'>
-                    <i class="glyphicon glyphicon-file"></i>
-                    書き出し
-                </button>
+            <div class="col s3">
+                <a class="waves-effect waves-light btn-large" data-action="export" title="Export annotations to JSON" id = 'export'>
+                    <i class="material-icons left">cloud</i>書き出し
+                </a>
             </div>
 
-            <div class="col-sm-2">
-                <button class="btn btn-info btn-block" '>
-                    <a href="mailto:sonoligo@gmail.com?subject=SonoLigo DEMO&amp;body=ご協力ありがとうございました。メールにデータを添付して送信、ご意見ご感想をお願い致します。"><i class="glyphicon glyphicon-envelope"></i>メール</a>
-                </button>
+            <div class="col s2">
+                <a class="waves-effect waves-light btn-large" href="mailto:sonoligo@gmail.com?subject=SonoLigo DEMO&amp;body=ご協力ありがとうございました。メールにデータを添付して送信、ご意見ご感想をお願い致します。">
+                    <i class="material-icons left">mail</i>メール
+                </a>
             </div>
         </div>
     </div>
@@ -64,21 +63,23 @@
      ************************
     ここから編集フォーム -->
 <div class="row">
-    <div class="col-sm-12">
-        <form class="box11" role="form" name="edit" style="opacity: 0; transition: opacity 100ms linear; margin: 30px 0;">
+
+    <form  role="form" name="edit" style="opacity: 0; transition: opacity 100ms linear; margin: 30px 0;">
             <!-- opacity: 0;で透明化　 -->
-            <div class="form-group col-sm-6">
-                <label for="start">開始時間(秒)</label>
-                <input class="form-control" id="start" name="start" />
+        <div class="col s12">
+        <div class="card-panel">
+            <div class="input-field col s6">
+                <label class="active" for="start">開始時間(秒)</label>
+                <input  id="start" name="start" />
             </div>
 
-            <div class="form-group col-sm-6">
-                <label for="end">終了時間(秒)</label>
-                <input class="form-control" id="end" name="end" />
+            <div class="input-field col s6">
+                <label class="active" for="end">終了時間(秒)</label>
+                <input  id="end" name="end" />
             </div>
 
 
-            <div class="form-group col-sm-12">
+            <div class="form-group col s12">
                 <label class = "control-label" for="label">ラベル</label>
                 <div class= "row">
                     <p>音程</p>
@@ -143,11 +144,13 @@
                             <label for="advice">その他</label>
                     </div>
                 </div>
-            </div>        
+            </div>
 
-            <div class="form-group">
-                <label for="note">コメント</label>
-                <textarea id="note" class="form-control" rows="3" name="note"></textarea>
+            <div class="row">       
+                <div class="input-field col s12">
+                    <label class = 'active' for="note">コメント</label>
+                    <textarea class="materialize-textarea" id="note"  rows="3" name="note"></textarea>
+                </div>
             </div>
 
 
@@ -165,8 +168,10 @@
 <!--             <button type="submit" class="square_btn_save">保存</button>
             <center><i>または</i></center>
             <button type="button" class="square_btn_save" data-action="delete-region">削除</button> -->
-        </form> 
+        </div>
     </div>
+
+    </form> 
 </div>
 
 
