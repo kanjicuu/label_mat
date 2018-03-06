@@ -67,7 +67,7 @@
     <form  role="form" name="edit" style="opacity: 0; transition: opacity 100ms linear; margin: 30px 0;">
             <!-- opacity: 0;で透明化　 -->
         <div class="col s12">
-        <div class="card-panel">
+        <div class="card-panel z-depth-3">
             <div class="input-field col s6">
                 <label class="active" for="start">開始時間(秒)</label>
                 <input  id="start" name="start" />
@@ -78,11 +78,101 @@
                 <input  id="end" name="end" />
             </div>
 
+            
+            
+            <label class = "control-label" for="label">ラベル</label>
+                <div class="col s12">
+                <form action="#">
+                    <div class="col m4">
+                        <p>音程</p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="1" value="1" />
+                                <span>音程が高い</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="2" value="2"/>
+                                <span>音程が低い</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="3" value="3"/>
+                                <span>音程が不安定</span>
+                            </label>
+                        </p>
+                    </div>
 
-            <div class="form-group col s12">
-                <label class = "control-label" for="label">ラベル</label>
-                <div class= "row">
-                    <p>音程</p>
+                    <div class="col m4">
+                        <p>技術</p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="4" value="4" />
+                                <span>音が大きい</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="5" value="5"/>
+                                <span>音が小さい</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="6" value="6"/>
+                                <span>バランスが悪い</span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="col m4">
+                        <p>表現</p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="7" value="7" />
+                                <span>ていねいに</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="8" value="8"/>
+                                <span>軽やかに</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="9" value="9"/>
+                                <span>重たい</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="10" value="10"/>
+                                <span>テンポ感を持って</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="6" value="6"/>
+                                <span>気持ちをこめて</span>
+                            </label>
+                        </p>
+                    </div>
+
+                    <div class="col m4">
+                        <p>その他</p>
+                        <p>
+                            <label>
+                                <input name="advice" type="radio" id="0" value="0" />
+                                <span>その他</span>
+                            </label>
+                        </p>
+                    </div>
+
+                </form>
+<!--                 <div class= "row">
                     <div class="radio-inline">
                         <input type="radio" name="advice" id="advice" value="1"  />
                             <label for="advice">音程が高い</label>
@@ -96,7 +186,7 @@
                         <label for="advice">音程が不安定</label>
                     </div>
                 </div>
-                
+
 
                 <div class= "row">
                     <p>技術</p>
@@ -144,8 +234,10 @@
                         <input type="radio" name="advice" id="advice" value="0"  />
                             <label for="advice">その他</label>
                     </div>
-                </div>
+                </div> -->
             </div>
+
+           
 
             <div class="row">       
                 <div class="input-field col s12">
@@ -158,11 +250,11 @@
             <div class="row">
                 <center>
 
-                    <button type="submit" class="btn btn-info">保存</button>
+                    <button type="submit" class="waves-effect waves-light btn-large">保存</button>
                
                     または
 
-                    <button type="button" class="btn btn-warning" data-action="delete-region">削除</button>       
+                    <button type="button" class="waves-effect waves-light btn-large red lighten-2" data-action="delete-region">削除</button>       
                 </center>
             </div>
 

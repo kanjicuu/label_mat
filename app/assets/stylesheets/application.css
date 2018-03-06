@@ -41,6 +41,15 @@ region.wavesurfer-region[data-region-highlight] {
   height: 100px;
 }
 
+.header {
+    color: #ee6e73;
+    font-weight: 300;
+}
+
+/*p{
+  font-size: 120%;
+}*/
+
 .box11{
     padding: 0.5em 1em;
     margin: 2em 0;
